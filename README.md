@@ -53,14 +53,14 @@ after that if you use a *linux OS* modify this script inside `package.json` and 
 
 ```
 "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server",
+    "test": "NODE_ENV=development webpack-dev-server",
 ```
 
 if otherwise you are using *mac OS* or a *windows OS* just open `package.json` on your editor and verify the start script matches as follows before running `npm test` to see the website on _localhost:8080_.
 
 ```
 "scripts": {
-    "start": "set NODE_ENV=development & webpack-dev-server",
+    "test": "set NODE_ENV=development & webpack-dev-server",
 ```
 
 ## Deploy
