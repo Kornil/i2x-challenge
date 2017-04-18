@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const GhPagesWebpackPlugin = require('gh-pages-webpack-plugin');
 
 const dev = process.env.NODE_ENV !== 'production' && process.argv.indexOf('-p') === -1;
 
@@ -54,8 +53,7 @@ const config = {
     path: path.join(__dirname, '/build'),
   },
   plugins: dev ? [HTMLWebpackPluginConfig] :
-  [HTMLWebpackPluginConfig, DefinePluginConfig, LoaderOptionsPluginConfig, UglifyPluginConfig,
-  /*GhPagesWebpackPluginConfig*/],
+  [HTMLWebpackPluginConfig, DefinePluginConfig, LoaderOptionsPluginConfig, UglifyPluginConfig],
 };
 
 
