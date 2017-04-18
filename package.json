@@ -1,0 +1,49 @@
+{
+  "name": "i2x-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "set NODE_ENV=development & webpack-dev-server",
+    "build": "set NODE_ENV=production & webpack -p --progress --profile --color"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.0",
+    "react-audio-player": "^0.4.0",
+    "react-cookie": "^1.0.5",
+    "react-dom": "^15.5.0",
+    "react-rating": "^0.7.0",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-form": "^6.6.3",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.28.0",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "gh-pages-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.2",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "redux-logger": "^3.0.1",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
