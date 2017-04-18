@@ -1,14 +1,14 @@
 {
   "name": "i2x-challenge",
   "version": "1.0.0",
-  "description": "",
+  "description": "i2x challenge, front-end app with login form and profile with data served from POST to external server",
   "main": "webpack.config.js",
   "scripts": {
     "start": "node server.js",
     "test": "set NODE_ENV=development & webpack-dev-server",
     "build": "set NODE_ENV=production & webpack -p --progress --profile --color"
   },
-  "author": "",
+  "author": "Francesco Agnoletto",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.1",
