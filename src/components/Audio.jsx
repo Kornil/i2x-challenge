@@ -20,7 +20,7 @@ const Audio = ({ data, index }) => (
       />
     </p>
     <p>{data.final_script}</p>
-    {/* duration is displayed directly on the audio player */}
+    {/* duration is displayed directly on the audio player so we don't need this part */}
     {/* <p>
       {`${Math.floor(data.duration / 60)}:${(data.duration % 60 < 10) ?
       `0${data.duration % 60}` : data.duration % 60}`}

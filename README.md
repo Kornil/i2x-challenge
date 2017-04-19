@@ -28,8 +28,8 @@ The project is live at https://i2x-challenge-francesco.herokuapp.com/
   * */containers* React stateful component
     * *App.jsx* base container where state is called and modified(source of thruth) before getting passed to stateless components in a parent -> children relationship
   * */reducers* store Redux cases
-    * *getaudios.js* reducer for GET request to get data after login
-    * *login.js* reducer for user login and logout
+    * *recordingsReducer.js* reducer for GET request to get data after login
+    * *userReducer.js* reducer for user login and logout
     * *index.js* combine all reducers
 
 * *server.js* entry point for node

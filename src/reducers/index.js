@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
-import login from './login';
-import getaudios from './getaudios';
+import userReducer from './userReducer';
+import recordingsReducer from './recordingsReducer';
 
-export default combineReducers({ login, getaudios, form: formReducer });
+export default combineReducers({ userReducer, recordingsReducer, form: formReducer });

@@ -106,9 +106,9 @@ App.contextTypes = {
 };
 
 const mapStateToProps = state => ({
-  user: state.login.user,
-  authenticated: state.login.authenticated,
-  audioFiles: state.getaudios.audioFiles,
+  user: state.userReducer.user,
+  authenticated: state.userReducer.authenticated,
+  audioFiles: state.recordingsReducer.audioFiles,
 });
 
 export default connect(mapStateToProps, actions)(App);

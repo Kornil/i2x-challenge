@@ -10,13 +10,9 @@ const initialState = {
  * @param {string} action string used to identify the function to use
  * @return {object} updated state
  */
-export default function getaudios(state = initialState, action) {
+export default function recordingsReducer(state = initialState, action) {
   switch (action.type) {
     case actions.GET_DATA:
-      return {
-        ...state,
-        audioFiles: action.audioFiles,
-      };
     case actions.REMOVE_DATA:
       return {
         ...state,
