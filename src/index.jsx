@@ -12,7 +12,10 @@ import './main.scss';
 const middleware = [thunk];
 if (process.env.NODE_ENV !== 'production') middleware.push(logger);
 
-const store = createStore(reducer, applyMiddleware(...middleware));
+const store = createStore(
+  reducer,
+  applyMiddleware(...middleware),
+);
 const root = document.getElementById('root');
 
 render(
