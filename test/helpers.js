@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { sinon, spy } from 'sinon';
 import { mount, render, shallow } from 'enzyme';
-import nock from 'nock';
+import moxios from 'moxios';
 
 global.expect = expect;
 global.sinon = sinon;
@@ -11,4 +11,4 @@ global.mount = mount;
 global.render = render;
 global.shallow = shallow;
 
-global.nock = nock;
+global.moxios = moxios;

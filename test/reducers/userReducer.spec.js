@@ -27,16 +27,21 @@ describe('Reducer::userReducer', () => {
   });
 
   describe('on LOGIN_USER_SUCCESS', () => {
+    beforeEach(() => {
+      moxios.install();
+    });
+
     afterEach(() => {
-      nock.cleanAll();
+      moxios.uninstall();
     });
     it('returns the response in given action', () => {
       // setup
-      nock(API_URL)
-      .post('/core/login')
-      .reply(200, {
-        user: defaultEmail,
-        authenticated: true,
+      moxios.wait(() => {
+        const request = moxios.requests.mostRecent();
+        request.respondWith({
+          status: 200,
+          response: { message: 'success', status: '200' },
+        });
       });
 
       const store = mockStore({
@@ -51,7 +56,6 @@ describe('Reducer::userReducer', () => {
 
       return store.dispatch(actions.loginUser(defaultEmail, 'pass123'))
       .then(() => { // return of async actions
-        console.log(store.dispatch(actions.loginUser(defaultEmail, 'pass123')));
         expect(store.getActions()).to.deep.equal(expectedActions);
       });
     });
