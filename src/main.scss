@@ -1,57 +1,56 @@
 body {
   font: 16px Arial, Helvetica, sans-serif;
+}
 
-  .fa {
-    color: #f1c40f;
+.button {
+  -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  background-color: #2CBBBB;
+  border: 1px solid #27A0A0;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+    background-color:#34CACA;
   }
+}
 
-  h1 {
-    font-size: 3em;
-    margin-top: 8rem;
-  }
+.form {
+  width: 12rem;
+  margin: auto;
+  .form__input {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+  } 
+}
 
-  .card {
-    padding: 4rem 2rem 0;
-    max-width: 650px;
-    margin: auto;
-  }
+.center {
+  text-align:center;
+}
 
-  .center {
-    text-align:center;
-    button {
-      -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
-      -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
-      box-shadow: inset 0px 1px 0px 0px #45D6D6;
-      background-color: #2CBBBB;
-      border: 1px solid #27A0A0;
-      display: inline-block;
-      cursor: pointer;
-      color: #FFFFFF;
-      font-size: 14px;
-      padding: 8px 18px;
-      text-decoration: none;
-      text-transform: uppercase;
-      &:hover {
-        background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
-        background-color:#34CACA;
-      }
-    }
-  }
+.fa-star {
+  color: #f1c40f;
+}
 
-  form {
-    width: 12rem;
-    margin: auto;
-    text-align:center;
-    input {
-      outline: none;
-      display: block;
-      width: 100%;
-      padding: 7px;
-      border: none;
-      border-bottom: 1px solid #ddd;
-      background: transparent;
-      margin-bottom: 10px;
-    }    
-  }
+.card {
+  padding: 4rem 2rem 0;
+  max-width: 650px;
+  margin: auto;
+}
 
+.header-title {
+  font-size: 3em;
+  margin-top: 8rem;
 }
